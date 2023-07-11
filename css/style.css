@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ######################### HTML ELEMENTS         ########################### */
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.4rem;
+    padding: 0.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p,
+li {
+    font-size: 1.4rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* #########################     UTILITY CLASS          ########################### */
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.lg-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333333;
+}
+
+.text-gray {
+    color: #555;
+}
+
+.bg-dark {
+    background-color: #3a3838;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.btn-secondary:hover {
+    background: #ddd;
+}
+
+.btn-secondary {
+    border: 2px solid #e64936;
+    border-radius: 1.3em;
+    color: #e64936;
+    background: #fff;
+}
+
+.btn-secondary:hover {
+    background: #fcf2f3;
+}
+
+
+
+
+
+
+/* #########################     HEADER      ########################### */
+.header {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/header-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar-items {
+    float: right;
+    padding: 1rem;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar-items .navbar-item {
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: #f4f4f4;
+}
+
+.navbar a:hover {
+    border-bottom: 0.2rem solid #fff;
+}
+
+/* ###################  Header content   ######################### */
+
+.header .header-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+}
+
+
+/* ################# ShowCase ###################################### */
+
+.showcase {
+    background: #ddd;
+    padding: 10rem 0;
+
+}
+
+.showcase .row {
+    height: 350px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 #ddd;
+}
+
+.showcase .row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row1 .text-box,
+.row2 .img-box {
+    float: right;
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row .text-box {
+    padding: 3rem;
+}
+
+.row .img-box {
+    height: 100%;
+}
+
+.row .img-box img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* #####################  Features styling ################################ */
+
+.features {
+    padding: 10rem 0;
+}
+
+.box-wraper {
+    box-shadow: 0 0 5px 0 #ddd;
+}
+
+
+.box-wraper .box {
+    width: 33.3%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.box-1,
+.box-3 {
+    background: #3a3838;
+    color: white;
+}
+
+.box-2 {
+    background: #e63946;
+    color: white;
+}
+
+
+.box-wraper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/* ###################################### footer ############################### */
+
+.footer {
+    padding: 3rem 0;
+    background: #3a3838;
+    text-align: center;
+}
+
+.social-media i {
+    color: #fff;
+    margin-left: 3rem;
+}
+
+
+/* ###################################### About Page Styling ############################### */
+
+.about {
+    padding: 5rem 0;
+}
+
+/* .about-heading{
+    border-bottom: 0.3em solid #e63946;
+} */
+
+.about-heading::after {
+    content: "";
+    display: block;
+    border: 0.1em solid #e63946;
+    width: 100%;
+}
+
+
+/* ########################### content-box #####################*/
+
+.about-wraper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wraper .left {
+    float: left;
+    width: 50%;
+}
+
+.about-wraper .right {
+    float: right;
+    width: 50%;
+}
+
+.about-wraper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wraper li::before {
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
+/* ######################### counts styling #################### */
+
+.counts {
+    margin-top: 3rem;
+
+}
+
+.count-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.counts::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.count-item span {
+    color: #e63946;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.count-item p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* ############################## Banner styling  ################################*/
+
+.banner {
+    background-color: #e63946;
+    padding: 1rem;
+    margin-top: 5rem;
+    box-shadow: 0 0 20px 0 #ddd;
+}
+
+.banner-left {
+    float: left;
+    color: #fff;
+    width: 70%;
+}
+
+.banner-right {
+    float: right;
+    width: 30%;
+}
+
+.banner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.banner-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.banner-btn {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    border: 0.2rem solid #f4f4f4;
+    padding: 0.5rem 3rem;
+    font-size: 2.2rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+
+
+/* ################################# Contact Us styling ########################## */
+
+.contact-form{
+    background-color: #ddd;
+    padding: 5rem 0;
+}
+.contact-form-wraper {
+   padding: 2rem 0;
+}
+
+.company-address {
+    float: left;
+    width: 49%;
+    height: 750px;
+    background-color: #fff;
+    padding: 2rem;
+    
+}
+
+.company-form {
+    float: right;
+    width: 48%;
+    height: 750px;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+
+.contact-form-wraper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.company-address .address{
+    margin-bottom: 3rem;
+}
+
+.address i{
+    color: #e63946;
+}
+
+.address h1{
+    display: inline-block;
+    font-size: 2.2rem;
+    margin-left: 1.5rem;
+}
+
+.company-address img {
+    display:inline-block;
+    width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+}
+
+/* ##################form styling ###################### */
+
+.company-form h1{
+    font-size: 2.2rem;
+    padding: 0.5rem;
+    border-bottom: 0.3rem solid red;
+}
+
+.company-form label{
+    display: block;
+    font-size: 1.6rem;
+}
+
+.company-form input{
+    width: 100%;
+    padding: 1rem;
+}
+
+.company-form textarea{
+    width: 100%;
+    height: 350px;
+}
+
+.form-btn{
+    text-align: center;
+    display: block;
+    padding: 0.5em 3em;
+    letter-spacing: 0.1rem;
+    background-color: #e63946;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    margin-left: 36%;
+}
